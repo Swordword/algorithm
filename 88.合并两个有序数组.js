@@ -41,8 +41,14 @@
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
 var merge = function (nums1, m, nums2, n) {
-    
-    console.log("nums1", nums1);
+    nums1.splice(m, nums1.length)
+    nums2.splice(n, nums2.length)
+    nums1.push(...nums2)
+    // console.log("nums1", nums1);
+    nums1.sort(function (a, b) {
+        return a - b
+    })
+    // console.log("nums1", nums1);
 };
 
-merge([1, 2, 3], 3, [2, 5, 6], 3)
+merge([0], 0, [1], 1)
