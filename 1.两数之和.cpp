@@ -5,11 +5,21 @@
  */
 
 // @lc code=start
-class Solution {
+#include <iostream>
+#include <vector>
+using namespace std;
+class Solution
+{
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        
-    }
+    vector<int> twoSum(vector<int> &nums, int target)
+    {
+        for (int i = 0; i < nums.size; i++)
+        {
+            /* code */
+        }
+        }
 };
 // @lc code=end
-
+int main()
+{
+}
