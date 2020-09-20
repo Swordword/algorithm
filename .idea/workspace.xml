@@ -31,6 +31,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="leetcode.id" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d19092d9-ba46-4f89-a0ac-7c5ad6c8561d" name="Default Changelist" comment="" />
@@ -40,6 +53,10 @@
       <updated>1600148296581</updated>
       <workItem from="1600148298231" duration="68000" />
       <workItem from="1600148392038" duration="2081000" />
+      <workItem from="1600181688879" duration="169000" />
+      <workItem from="1600182013869" duration="37000" />
+      <workItem from="1600182072082" duration="42000" />
+      <workItem from="1600182133752" duration="19000" />
     </task>
     <servers />
   </component>
