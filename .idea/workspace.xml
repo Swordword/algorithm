@@ -29,12 +29,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="leetcode.id" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CMake" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
@@ -57,10 +57,37 @@
       <workItem from="1600182013869" duration="37000" />
       <workItem from="1600182072082" duration="42000" />
       <workItem from="1600182133752" duration="19000" />
+      <workItem from="1601646070709" duration="608000" />
+      <workItem from="1601646697741" duration="655000" />
+      <workItem from="1601648313733" duration="592000" />
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1396" height="231" key="GridCell.Tab.0.bottom" timestamp="1601647356562">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1601647356562" />
+    <state width="1396" height="231" key="GridCell.Tab.0.center" timestamp="1601647356561">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1601647356561" />
+    <state width="1396" height="231" key="GridCell.Tab.0.left" timestamp="1601647356561">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1601647356561" />
+    <state width="1396" height="231" key="GridCell.Tab.0.right" timestamp="1601647356562">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1601647356562" />
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1601646694554">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.1440.877@0.23.1440.877" timestamp="1601646694554" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel" timestamp="1601646694553">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.1440.877@0.23.1440.877" timestamp="1601646694553" />
     <state x="229" y="100" key="SettingsEditor" timestamp="1600150356436">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

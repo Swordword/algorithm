@@ -143,86 +143,59 @@ algorithm/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/build
 .PHONY : algorithm/fast
 
-1.两数之和.o: 1.两数之和.cpp.o
+leetcode/editor/cn/[771]宝石与石头.o: leetcode/editor/cn/[771]宝石与石头.cpp.o
 
-.PHONY : 1.两数之和.o
-
-# target to build an object file
-1.两数之和.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/1.两数之和.cpp.o
-.PHONY : 1.两数之和.cpp.o
-
-1.两数之和.i: 1.两数之和.cpp.i
-
-.PHONY : 1.两数之和.i
-
-# target to preprocess a source file
-1.两数之和.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/1.两数之和.cpp.i
-.PHONY : 1.两数之和.cpp.i
-
-1.两数之和.s: 1.两数之和.cpp.s
-
-.PHONY : 1.两数之和.s
-
-# target to generate assembly for a file
-1.两数之和.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/1.两数之和.cpp.s
-.PHONY : 1.两数之和.cpp.s
-
-5979.thousand-separator.o: 5979.thousand-separator.cpp.o
-
-.PHONY : 5979.thousand-separator.o
+.PHONY : leetcode/editor/cn/[771]宝石与石头.o
 
 # target to build an object file
-5979.thousand-separator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/5979.thousand-separator.cpp.o
-.PHONY : 5979.thousand-separator.cpp.o
+leetcode/editor/cn/[771]宝石与石头.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/leetcode/editor/cn/[771]宝石与石头.cpp.o
+.PHONY : leetcode/editor/cn/[771]宝石与石头.cpp.o
 
-5979.thousand-separator.i: 5979.thousand-separator.cpp.i
+leetcode/editor/cn/[771]宝石与石头.i: leetcode/editor/cn/[771]宝石与石头.cpp.i
 
-.PHONY : 5979.thousand-separator.i
+.PHONY : leetcode/editor/cn/[771]宝石与石头.i
 
 # target to preprocess a source file
-5979.thousand-separator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/5979.thousand-separator.cpp.i
-.PHONY : 5979.thousand-separator.cpp.i
+leetcode/editor/cn/[771]宝石与石头.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/leetcode/editor/cn/[771]宝石与石头.cpp.i
+.PHONY : leetcode/editor/cn/[771]宝石与石头.cpp.i
 
-5979.thousand-separator.s: 5979.thousand-separator.cpp.s
+leetcode/editor/cn/[771]宝石与石头.s: leetcode/editor/cn/[771]宝石与石头.cpp.s
 
-.PHONY : 5979.thousand-separator.s
+.PHONY : leetcode/editor/cn/[771]宝石与石头.s
 
 # target to generate assembly for a file
-5979.thousand-separator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/5979.thousand-separator.cpp.s
-.PHONY : 5979.thousand-separator.cpp.s
+leetcode/editor/cn/[771]宝石与石头.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/leetcode/editor/cn/[771]宝石与石头.cpp.s
+.PHONY : leetcode/editor/cn/[771]宝石与石头.cpp.s
 
-83.删除排序链表中的重复元素.o: 83.删除排序链表中的重复元素.cpp.o
+main.o: main.cpp.o
 
-.PHONY : 83.删除排序链表中的重复元素.o
+.PHONY : main.o
 
 # target to build an object file
-83.删除排序链表中的重复元素.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/83.删除排序链表中的重复元素.cpp.o
-.PHONY : 83.删除排序链表中的重复元素.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-83.删除排序链表中的重复元素.i: 83.删除排序链表中的重复元素.cpp.i
+main.i: main.cpp.i
 
-.PHONY : 83.删除排序链表中的重复元素.i
+.PHONY : main.i
 
 # target to preprocess a source file
-83.删除排序链表中的重复元素.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/83.删除排序链表中的重复元素.cpp.i
-.PHONY : 83.删除排序链表中的重复元素.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-83.删除排序链表中的重复元素.s: 83.删除排序链表中的重复元素.cpp.s
+main.s: main.cpp.s
 
-.PHONY : 83.删除排序链表中的重复元素.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-83.删除排序链表中的重复元素.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/83.删除排序链表中的重复元素.cpp.s
-.PHONY : 83.删除排序链表中的重复元素.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -233,15 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... algorithm"
-	@echo "... 1.两数之和.o"
-	@echo "... 1.两数之和.i"
-	@echo "... 1.两数之和.s"
-	@echo "... 5979.thousand-separator.o"
-	@echo "... 5979.thousand-separator.i"
-	@echo "... 5979.thousand-separator.s"
-	@echo "... 83.删除排序链表中的重复元素.o"
-	@echo "... 83.删除排序链表中的重复元素.i"
-	@echo "... 83.删除排序链表中的重复元素.s"
+	@echo "... leetcode/editor/cn/[771]宝石与石头.o"
+	@echo "... leetcode/editor/cn/[771]宝石与石头.i"
+	@echo "... leetcode/editor/cn/[771]宝石与石头.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
