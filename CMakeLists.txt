@@ -6,5 +6,5 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(algorithm
         main.cpp
         Cpp/common.h
-        Cpp/771.宝石与石头.cpp
+        Cpp/2.两数相加.cpp
         )
