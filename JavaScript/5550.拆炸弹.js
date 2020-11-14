@@ -1,4 +1,5 @@
 /**
+ * link https://leetcode-cn.com/contest/biweekly-contest-39/problems/defuse-the-bomb/
  * @param {number[]} code
  * @param {number} k
  * @return {number[]}
