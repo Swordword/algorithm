@@ -1,0 +1,10 @@
+/**
+ * @param {string} command
+ * @return {string}
+ */
+var interpret = function (command) {
+  return command.replace(/\(\)/g, 'o').replace(/\(al\)/g, 'al')
+}
+
+const str = '(al)G(al)()()G'
+console.log(interpret(str))
