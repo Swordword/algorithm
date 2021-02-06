@@ -1,11 +1,10 @@
 #include "common.h"
-#include "5653.可以形成最大正方形的矩形数目.cpp"
+#include "5657. 唯一元素的和.cpp"
 int main()
 {
+  vector<int> ivec{1,2,3,2};
   Solution sol;
-
-  vector<vector<int>> ivec = {{5, 8}, {3, 9}, {5, 12}, {16, 5}};
-  int res = sol.countGoodRectangles(ivec);
-  cout << "res" << res << endl;
+  auto res = sol.sumOfUnique(ivec);
+  cout << res << endl;
   return 0;
 }
