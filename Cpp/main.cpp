@@ -1,11 +1,11 @@
 #include "common.h"
 
-#include "5672. 检查数组是否经排序和轮转得到.cpp"
+#include "5673. 移除石子的最大得分.cpp"
 int main()
 {
-  vector<int> ivec{2, 3, 6, 4, 5, 1};
+
   Solution sol;
-  auto res = sol.check(ivec);
+  auto res = sol.maximumScore(4, 4, 6);
   cout << res << endl;
   return 0;
 }
