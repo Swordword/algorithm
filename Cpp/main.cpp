@@ -1,11 +1,11 @@
 #include "common.h"
 
-#include "5673. 移除石子的最大得分.cpp"
+#include "5668. 最长的美好子字符串.cpp"
 int main()
 {
 
   Solution sol;
-  auto res = sol.maximumScore(4, 4, 6);
-  cout << res << endl;
+  string s{"Bb"};
+  sol.longestNiceSubstring(s);
   return 0;
 }
