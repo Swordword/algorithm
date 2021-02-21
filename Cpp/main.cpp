@@ -1,11 +1,13 @@
 #include "common.h"
 
-#include "5668. 最长的美好子字符串.cpp"
+#include "5685. 交替合并字符串.cpp"
 int main()
 {
 
   Solution sol;
-  string s{"Bb"};
-  sol.longestNiceSubstring(s);
+  string word1{"ab"};
+  string word2{"pqrs"};
+  string res = sol.mergeAlternately(word1, word2);
+  cout << res << endl;
   return 0;
 }

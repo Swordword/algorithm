@@ -57,16 +57,15 @@ public:
     {
       for (auto j = i; j != n; j++)
       {
-        cout << "i: " << i << " j: " << j << endl;
+
         string tempStr = s.substr(i, j - i + 1);
-        cout << "tempStr :" << tempStr << endl;
+
         string temp = longestCheckStr(tempStr);
-        cout << "temp :" << temp << endl;
+
         if (temp.size() > res.size())
           res = temp;
       }
     }
-    cout << "res: " << res << endl;
     return res;
   }
 };
