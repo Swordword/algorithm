@@ -1,14 +1,12 @@
 #include "common.h"
 
-#include "5680. 找到最近的有相同 X 或 Y 坐标的点.cpp"
+#include "5681. 判断一个数字是否可以表示成三的幂的和.cpp"
 int main()
 {
-  int x = 3, y = 4;
-  // vector<vector<int>> points{{1, 2}, {3, 1}, {2, 4}, {2, 3}, {4, 4}};
-  vector<vector<int>> points{{3, 4}};
+  
 
   Solution sol;
-  auto res = sol.nearestValidPoint(x, y, points);
+  auto res = sol.checkPowersOfThree(91);
   cout << res << endl;
   return 0;
 }
