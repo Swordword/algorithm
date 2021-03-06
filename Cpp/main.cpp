@@ -1,13 +1,14 @@
 #include "common.h"
 
-#include "5685. 交替合并字符串.cpp"
+#include "5680. 找到最近的有相同 X 或 Y 坐标的点.cpp"
 int main()
 {
+  int x = 3, y = 4;
+  // vector<vector<int>> points{{1, 2}, {3, 1}, {2, 4}, {2, 3}, {4, 4}};
+  vector<vector<int>> points{{3, 4}};
 
   Solution sol;
-  string word1{"ab"};
-  string word2{"pqrs"};
-  string res = sol.mergeAlternately(word1, word2);
+  auto res = sol.nearestValidPoint(x, y, points);
   cout << res << endl;
   return 0;
 }
