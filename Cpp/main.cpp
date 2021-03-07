@@ -1,12 +1,12 @@
 #include "common.h"
+#include "5697. 检查二进制字符串字段.cpp"
 
-#include "5681. 判断一个数字是否可以表示成三的幂的和.cpp"
 int main()
 {
-  
 
+  string s = "1";
   Solution sol;
-  auto res = sol.checkPowersOfThree(91);
+  auto res = sol.checkOnesSegment(s);
   cout << res << endl;
   return 0;
 }
