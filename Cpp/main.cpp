@@ -1,12 +1,12 @@
 #include "common.h"
-#include "5697. 检查二进制字符串字段.cpp"
+#include "115.不同的子序列.cpp"
 
 int main()
 {
 
-  string s = "1";
+  string s = "Hellow";
   Solution sol;
-  auto res = sol.checkOnesSegment(s);
-  cout << res << endl;
+  sol.numDistinct(s, s);
+
   return 0;
 }
