@@ -1,12 +1,12 @@
 #include "common.h"
-#include "191.位-1-的个数.cpp"
+#include "190.颠倒二进制位.cpp"
 
 int main()
 {
 
-  Solution sol;
-  auto aa =  sol.hammingWeight(00000000000000000000000000001011);
-  cout<<aa<<endl;
+  Solution foo;
+  uint32_t buin = '00000010100101000001111010011100';
+  foo.reverseBits(buin);
 
   return 0;
 }
