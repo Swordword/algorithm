@@ -9,9 +9,9 @@ using std::endl;
 typedef struct PolyNode *Polynomial;
 struct PolyNode
 {
-  int coef;  // 参数
-  int expon; //  指数
-  Polynomial link;
+  int coef;        // 参数
+  int expon;       //  指数
+  Polynomial link; // 指向下一个 PolyNode 的指针
 };
 
 void Attach(int c, int e, Polynomial *pRear)
@@ -25,6 +25,29 @@ void Attach(int c, int e, Polynomial *pRear)
   *pRear = P;
 }
 
+// FEAT: 读取多项式
+Polynomial ReadPoly()
+{
+  Polynomial P, Rear, t;
+  int N = 0;
+  // c 参数 e 指数
+  int c = 0, e = 0;
+  cin >> N;
+  P = (Polynomial)malloc(sizeof(struct PolyNode));
+  P->link = nullptr;
+  Rear = P;
+  while (N--)
+  {
+    cin >> c >> e;
+    Attach(c, e, &Rear);
+  }
+  t = P;
+  P = P->link;
+  free(t);
+  return P;
+}
+
+// FEAT: 多项式相加
 Polynomial Add(Polynomial P1, Polynomial P2)
 {
   auto t1 = P1, t2 = P2;
@@ -37,8 +60,9 @@ Polynomial Add(Polynomial P1, Polynomial P2)
     {
       if (t1->coef + t2->coef != 0)
       {
-        (P->link)->coef = t1->coef + t2->coef;
-        (P->link)->expon = t1->expon + t2->expon;
+        Attach((t1->coef + t2->coef), t1->expon, &P);
+        // pp->coef = (t1->coef + t2->coef);
+        // pp->expon = t1->expon;
         P = P->link;
         t1 = t1->link;
         t2 = t2->link;
@@ -46,21 +70,24 @@ Polynomial Add(Polynomial P1, Polynomial P2)
     }
     else if (t1->expon > t2->expon)
     {
-      (P->link)->coef = t1->coef;
-      (P->link)->expon = t1->expon;
+      Attach(t1->coef, t1->expon, &P);
+      // pp->coef = t1->coef;
+      // pp->expon = t1->expon;
       P = P->link;
       t1 = t1->link;
     }
     else
     {
-      (P->link)->coef = t2->coef;
-      (P->link)->expon = t2->expon;
+      Attach(t2->coef, t2->expon, &P);
+      // pp->coef = t2->coef;
+      // pp->expon = t2->expon;
       P = P->link;
       t2 = t2->link;
     }
   }
   while (t1)
   {
+    cout << "t1 more" << endl;
     (P->link)->coef = t1->coef;
     (P->link)->expon = t1->expon;
     P = P->link;
@@ -78,45 +105,26 @@ Polynomial Add(Polynomial P1, Polynomial P2)
   return P;
 }
 
-Polynomial ReadPoly()
-{
-  Polynomial P, Rear, t;
-  int N;
-  // c 参数 e 指数
-  int c, e;
-  cin >> N;
-  P = (Polynomial)malloc(sizeof(struct PolyNode));
-  P->link = nullptr;
-  Rear = P;
-  while (N--)
-  {
-    cin >> c >> e;
-    Attach(c, e, &Rear);
-  }
-  t = P;
-  P = P->link;
-  free(t);
-  return P;
-}
-
+// FEAT: 打印多项式
 void PrintPoly(Polynomial P)
 {
   while (P)
   {
-    cout << P->coef << P->expon << endl;
+    cout << P->coef << " " << P->expon << endl;
+    P = P->link;
   }
 }
 
 int main()
 {
   Polynomial P1, P2, PP, PS;
-  // TODO: 读多项式
   P1 = ReadPoly();
   P2 = ReadPoly();
-  // // TODO: 多项式想乘
+
+  // TODO: 多项式相乘
   // PP = Mult(P1, P2);
-  // // TODO: 输入多项式
   // PrintPoly(PP);
+
   PS = Add(P1, P2);
   PrintPoly(PS);
   return 0;
