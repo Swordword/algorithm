@@ -1,10 +1,7 @@
 // FEAT: 一元多项式的加法与乘法
 #include <iostream>
-#include <vector>
 
-using std::cin;
-using std::cout;
-using std::endl;
+using namespace std;
 
 typedef struct PolyNode *Polynomial;
 
@@ -59,9 +56,9 @@ Polynomial Add(Polynomial P1, Polynomial P2)
       if (t1->coef + t2->coef != 0)
       {
         Attach(t1->coef + t2->coef, t1->expon, &Rear);
-        t1 = t1->link;
-        t2 = t2->link;
       }
+      t1 = t1->link;
+      t2 = t2->link;
     }
     else if (t1->expon > t2->expon)
     {
@@ -93,10 +90,10 @@ Polynomial Add(Polynomial P1, Polynomial P2)
 
 Polynomial Mult(Polynomial P1, Polynomial P2)
 {
-  Polynomial P, Rear, t1, t2, t;
-  int c, e;
   if (!P1 || !P2)
     return nullptr;
+  Polynomial P, Rear, t1, t2, t;
+  int c, e;
   t1 = P1;
   t2 = P2;
   P = (Polynomial)malloc(sizeof(struct PolyNode));
@@ -123,7 +120,7 @@ Polynomial Mult(Polynomial P1, Polynomial P2)
       }
       if (Rear->link && Rear->link->expon == e)
       {
-        if (Rear->link->coef + c != 0)
+        if (Rear->link->coef + c)
         {
           Rear->link->coef += c;
         }
@@ -147,9 +144,9 @@ Polynomial Mult(Polynomial P1, Polynomial P2)
     }
     t1 = t1->link;
   }
-  t2 = P; // 删除链表头的空节点
+  t = P; // 删除链表头的空节点
   P = P->link;
-  free(t2);
+  free(t);
   return P;
 }
 
@@ -159,6 +156,7 @@ void PrintPoly(Polynomial P)
   if (!P)
   {
     cout << "0 0" << endl;
+    return;
   }
   while (P)
   {
@@ -166,7 +164,6 @@ void PrintPoly(Polynomial P)
       flag = 1;
     else
       cout << " ";
-
     cout << P->coef << " " << P->expon;
     P = P->link;
   }
@@ -183,12 +180,10 @@ int main()
 
   // TODO:乘法运算
   PP = Mult(P1, P2);
-
+  PrintPoly(PP);
   // TODO:加法运算
   PS = Add(P1, P2);
-
   // TODO:多项式输入
-  PrintPoly(PP);
   PrintPoly(PS);
   return 0;
 }
