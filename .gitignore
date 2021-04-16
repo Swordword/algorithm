@@ -1,9 +1,26 @@
-.idea/
-.vscode/
-cmake-build-debug/
+# ignore all files and dirs
+*
+
+# unignore all dirs
+!*/
+
+# unignore specific files with following extensions
+!*.cpp
+!*.py
+!*.js
+!*.json
+!*.java
+!*.txt
+!*.md
+!*.png
+!*.pdf
+!*.zip
+!*.jpeg
+!*.jpg
+!*.html
+!*.docx
+!*.tex
+!*.ipynb
+
 build/
-main
-exercise
-exercise1
-exercise2
-exercise3
+cmake-build-debug/
