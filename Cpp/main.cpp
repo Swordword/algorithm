@@ -1,10 +1,15 @@
 #include "common.h"
-#include "5738. K 进制表示下的各位数字总和.cpp"
+#include "5746. 到目标元素的最小距离.cpp"
 
 int main()
 {
 
   Solution foo;
-  foo.sumBase(10, 10);
+  vector<int> nums{1, 2, 3, 4, 5};
+  int target = 5;
+  int start = 3;
+
+  int res = foo.getMinDistance(nums, target, start);
+  cout << res << endl;
   return 0;
 }
