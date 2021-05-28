@@ -7,7 +7,7 @@ int main()
   Solution foo;
 
   string s = "abcabcbb";
-  bool res = foo.lengthOfLongestSubstring(s);
+  int res = foo.lengthOfLongestSubstring(s);
   cout << res << endl;
   return 0;
 }
