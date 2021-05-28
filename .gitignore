@@ -21,6 +21,7 @@
 !*.docx
 !*.tex
 !*.ipynb
+main
 
 build/
 cmake-build-debug/

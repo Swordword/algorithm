@@ -1,13 +1,13 @@
 #include "common.h"
-#include "5763. 哪种连续子字符串更长.cpp"
+#include "3.无重复字符的最长子串.cpp"
 
 int main()
 {
 
   Solution foo;
 
-  string s = "1100";
-  bool res = foo.checkZeroOnes(s);
-  cout << "res:" << res << endl;
+  string s = "abcabcbb";
+  bool res = foo.lengthOfLongestSubstring(s);
+  cout << res << endl;
   return 0;
 }

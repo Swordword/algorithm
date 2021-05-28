@@ -10,12 +10,15 @@ class Solution
 public:
     int lengthOfLongestSubstring(string s)
     {
-        for (char c : s)
+        int n = s.size();
+        if (n <= 1)
+            return n;
+            
+        int max = 0;
+        for (size_t i = 0; i < s.size(); i++)
         {
-            cout << c << endl;
-        };
-        // s.push_back('c');
-        // return s.length();
+            cout << s[i] << endl;
+        }
     }
 };
 // @lc code=end
