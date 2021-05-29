@@ -1,13 +1,13 @@
 #include "common.h"
-#include "3.无重复字符的最长子串.cpp"
+#include "5754. 长度为三且各字符不同的子字符串.cpp"
 
 int main()
 {
 
   Solution foo;
 
-  string s = "abcabcbb";
-  int res = foo.lengthOfLongestSubstring(s);
+  string s = "aababcabc";
+  int res = foo.countGoodSubstrings(s);
   cout << res << endl;
   return 0;
 }
