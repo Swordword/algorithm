@@ -11,18 +11,21 @@ class Solution
 public:
     vector<int> dailyTemperatures(vector<int> &temperatures)
     {
-        const size_t totalSize = temperatures.size();
-        vector<int> res(totalSize, 0);
-        for (size_t i = 0; i < totalSize - 1; i++)
+        const int totalSize = temperatures.size();
+        vector<int> res(totalSize, 0), next(101, 30100);
+        for (int i = totalSize - 1; i >= 0; --i)
         {
-            for (size_t j = i + 1; j < totalSize; j++)
+            int temp_i = temperatures[i];
+            auto tempIndex = 30100;
+            for (int j = temp_i + 1; j <= 100; j++)
             {
-                if (temperatures[j] > temperatures[i])
-                {
-                    res[i] = j - i;
-                    break;
-                }
+                tempIndex = min(tempIndex, next[j]);
             }
+            if (tempIndex != 30100)
+            {
+                res[i] = tempIndex - i;
+            }
+            next[temp_i] = i;
         }
 
         return res;
