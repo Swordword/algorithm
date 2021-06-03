@@ -13,18 +13,19 @@ public:
     {
         int n = temperatures.size();
         vector<int> res(n);
-        stack<int> s;
+        int *sta = new int[n];
+        int top = -1;
         for (int i = 0; i < n; i++)
         {
             /* code */
-            while (!s.empty() && temperatures[i] > temperatures[s.top()])
+            while (top != -1 && temperatures[i] > temperatures[sta[top]])
             {
-                res[s.top()] = i - s.top();
-                s.pop();
+                res[sta[top]] = i - sta[top];
+                top--;
             }
-            s.push(i);
+            sta[++top] = i;
         }
-
+        delete[] sta;
         return res;
     }
 };
