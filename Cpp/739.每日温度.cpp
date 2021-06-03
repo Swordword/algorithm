@@ -12,16 +12,16 @@ public:
     vector<int> dailyTemperatures(vector<int> &temperatures)
     {
         const int totalSize = temperatures.size();
-        vector<int> res(totalSize, 0), next(101, 30100);
+        vector<int> res(totalSize, 0), next(101, INT32_MAX);
         for (int i = totalSize - 1; i >= 0; --i)
         {
             int temp_i = temperatures[i];
-            auto tempIndex = 30100;
-            for (int j = temp_i + 1; j <= 100; j++)
+            int tempIndex = INT32_MAX;
+            for (int j = temp_i + 1; j <= 100; ++j)
             {
                 tempIndex = min(tempIndex, next[j]);
             }
-            if (tempIndex != 30100)
+            if (tempIndex != INT32_MAX)
             {
                 res[i] = tempIndex - i;
             }
