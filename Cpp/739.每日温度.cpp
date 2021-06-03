@@ -1,4 +1,4 @@
-// #include "common.h"
+#include "common.h"
 /*
  * @lc app=leetcode.cn id=739 lang=cpp
  *
@@ -11,21 +11,18 @@ class Solution
 public:
     vector<int> dailyTemperatures(vector<int> &temperatures)
     {
-        const int totalSize = temperatures.size();
-        vector<int> res(totalSize, 0), next(101, INT32_MAX);
-        for (int i = totalSize - 1; i >= 0; --i)
+        int n = temperatures.size();
+        vector<int> res(n);
+        stack<int> s;
+        for (int i = 0; i < n; i++)
         {
-            int temp_i = temperatures[i];
-            int tempIndex = INT32_MAX;
-            for (int j = temp_i + 1; j <= 100; ++j)
+            /* code */
+            while (!s.empty() && temperatures[i] > temperatures[s.top()])
             {
-                tempIndex = min(tempIndex, next[j]);
+                res[s.top()] = i - s.top();
+                s.pop();
             }
-            if (tempIndex != INT32_MAX)
-            {
-                res[i] = tempIndex - i;
-            }
-            next[temp_i] = i;
+            s.push(i);
         }
 
         return res;
