@@ -1,3 +1,4 @@
+// https://leetcode-cn.com/problems/eliminate-maximum-number-of-monsters/
 #include "common.h"
 
 class Solution
@@ -9,15 +10,20 @@ public:
     vector<float> timeList(sz);
     for (auto i = 0; i < sz; i++)
     {
-      timeList[i] = (float)dist[i] / (float)speed[i];
+      timeList[i] = dist[i] / (speed[i] / 1.0);
     }
     sort(timeList.begin(), timeList.end());
-    int idx = 0;
-    while (timeList[idx] > idx && idx <= sz - 1)
+    int res = 0;
+    for (auto i = 0; i < sz; i++)
     {
-      idx++;
+      if (timeList[i] > i)
+      {
+        res++;
+      }
+      else
+        break;
     }
-    
-    return idx;
+
+    return res;
   }
 };
