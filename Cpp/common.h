@@ -12,5 +12,6 @@
 #include <functional>
 #include <unordered_set>
 #include <stack>
+#include <math.h>
 
 using namespace std;
