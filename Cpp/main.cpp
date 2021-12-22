@@ -3,8 +3,6 @@
 
 int main()
 {
-  Solution foo;
-  vector<string> vstr{"abc", "car", "ada", "racecar", "cool"};
-  auto aa = foo.firstPalindrome(vstr);
-  cout << "res: " << aa << endl;
+  int a = 200 * 300 * 400 * 500;
+  cout << "a = 200 * 300 * 400 * 500" << a << endl;
 }
