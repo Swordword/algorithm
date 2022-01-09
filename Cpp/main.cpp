@@ -1,5 +1,5 @@
 #include "common.h";
-#include "5956. 找出数组中的第一个回文字符串.cpp";
+#include "5976. 检查是否每一行每一列都包含全部整数.cpp";
 
 int main()
 {
