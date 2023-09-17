@@ -2,9 +2,12 @@
 
 #include "common.h";
 
-class Solution {
+class Solution
+{
 public:
-    bool checkValid(vector<vector<int>>& matrix) {
-        
+    bool checkValid(vector<vector<int>> &matrix)
+    {
     }
+
+
 };
