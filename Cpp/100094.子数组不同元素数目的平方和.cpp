@@ -14,7 +14,7 @@ public:
         {
             for (int j = i; j < nums.size(); ++j)
             {
-
+                // set 是左闭右开区间
                 std::set<int> uniqueNums(nums.begin() + i, nums.begin() + j + 1);
                 int count = uniqueNums.size();
                 cout << "count " << count << endl;
